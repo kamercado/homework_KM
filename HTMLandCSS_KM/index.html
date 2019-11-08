@@ -2,15 +2,42 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-	<title>Crime in LA</title>
-<style>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel='stylesheet' type="text/css" href="style.css">
+  	<title>Crime in LA</title>
 
-</style>
 </head>
 <body>
-<h1>Crime in LA (Project 1)</h1>
-<p>This project was to explore the characteristics of crime in LA.</p>
-<h3>Questions Project Addressed</h3>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Crime in LA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+      	<a class="nav-link" href="#">Graphs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Comparisons</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Data</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <h1 class="display-3">Crime in LA</h1>
+  <p class="lead">This project was to explore the characteristics of crime in LA.</p>
+  <hr class="my-4">
+  <h3>Questions Project Addressed</h3>
 <ul>
 	<li>What types of arrests in LA are most common?</li>
 	<li>Has crime in LA increased or decreased over time?</li>
@@ -23,7 +50,7 @@
 <h3>About the Data Used</h3>
 	<p>The data used in the project was pulled from Kaggle.com and is hosted by the City of Los Angeles.
 </p>
-	<p>A link to the dataset can be found <a href ="https://www.kaggle.com/cityofLA/los-angeles-crime-arrest-data">here.</a></p>
+	<p>A link to the dataset can be found <a href ="https://www.kaggle.com/cityofLA/los-angeles-crime-arrest-data" target="_blank">here.</a></p>
 <p>The dataset contains information on arrests made between 2010-2019. Information the dataset presents includes:</p>
 <ul>
 	<li>Report ID</li>
@@ -47,6 +74,10 @@
 <figure>
 	<img src="./Resources_KM/Pandas_investigations_Inc_2/Top5_males.png" alt="Top 5 Crime Types for Males">
 </figure>
+</div>
+
+
+
 
 
 </body>
