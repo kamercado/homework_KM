@@ -53,19 +53,19 @@ button.on("click", function() {
 	var filteredSightings = tableData.filter(sighting => sighting.datetime === inputDate);
 	console.log(filteredSightings);
 
-// 	filteredSightings.forEach(function(filteredSighting) {
-// 	// append one table row for each UFO sighting object
-// 	//clear rows
-// 	d3.selectAll("td").html("")
-// 	var row = tbody.append("tr");
-// // Use `Object.entries` to display each UFO Sighting value
-// 	Object.entries(filteredSightings).forEach(function([key, value]) {
-//     console.log(key, value);
-//     // // Step 4: Use d3 to append 1 cell per UFO Sighting value
-//     var cell = row.append("td");
+	filteredSightings.forEach(function(filteredSighting) {
+	// append one table row for each UFO sighting object
+	//clear rows
+	d3.selectAll("td").html("")
+	var row = tbody.append("tr");
+// Use `Object.entries` to display each UFO Sighting value
+	Object.entries(filteredSightings).forEach(function([key, value]) {
+    console.log(key, value);
+    // // Step 4: Use d3 to append 1 cell per UFO Sighting value
+    var cell = row.append("td");
 
-//     cell.text(value);
-// 	})
+    cell.text(value);
+	})
 
-// })
+})
 })
